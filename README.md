@@ -8,13 +8,18 @@
     SPDX-License-Identifier: Apache-2.0
 -->
 
-# GitHub Pages
-The latest news for CDI 4.x can be found in the [GitHub pages](https://jakartaee.github.io/cdi/)
+## documentation
+* [docs](docs)
 
-Sources in GIT
-====
+## 💡[specification](spec)💡
 
-The main branch contains the work-in-progress on CDI.next specification (5.0)
+# [GitHub Pages](https://github.com/dancer1325/jakartaee-cdi.git)
+* CDI 4.x's latest news
+
+# Sources in GIT
+* main branch
+  * == CDI.next specification (5.0)
+    * work-in-progress 
 
 # Legacy Releases
 Check out the [cdi-spec.org](http://cdi-spec.org) for more info on CDI 2.0 and CDI 1.2

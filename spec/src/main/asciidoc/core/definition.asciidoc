@@ -11,20 +11,29 @@ SPDX-License-Identifier: Apache-2.0
 
 == Concepts
 
-A bean is a source of contextual objects which define application state and/or logic.
-These objects are called _contextual instances of the bean_.
-The container creates and destroys these instances and associates them with the appropriate context.
-Contextual instances of a bean may be injected into other objects (including other bean instances) that execute in the same context.
-A bean may bear metadata defining its lifecycle and interactions with other beans.
+* bean
+    ** == source of contextual objects / define application state and/or logic
+    ** may bear
+        *** metadata / define its lifecycle
+        *** interactions -- with -- other beans
+    ** == MULTIPLE attributes
+        *** (nonempty) set of bean types
+        *** (nonempty) set of qualifiers
+        *** scope
+        *** bean name
+        **** OPTIONAL
+        *** set of interceptor bindings
+        *** bean implementation
 
-A bean comprises the following attributes:
+* _contextual instances of the bean_
+    ** == PREVIOUS contextual objects
+    ** container
+        *** creates these instances
+        *** destroys these instances
+        *** associates these instances -- with the -- appropriate context
+    ** uses
+        *** inject | other objects (EVEN OTHER bean instances) / executed | SAME context
 
-* A (nonempty) set of bean types
-* A (nonempty) set of qualifiers
-* A scope
-* Optionally, a bean name
-* A set of interceptor bindings
-* A bean implementation
 
 Furthermore, a bean may be an alternative or a reserve.
 

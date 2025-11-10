@@ -9,10 +9,12 @@ SPDX-License-Identifier: Apache-2.0
 ////
 = CDI Specification document generation
 
-This module contains AsciiDoc sources and configuration to generate CDI documentation in HTML and PDF format for both Apache License 2 and Jakarta Eclipse Foundation Specification Process.
+* goal
+    ** ⭐️link:src/main/asciidoc/cdi-spec.asciidoc[AsciiDoc sources]⭐️ + how to generate CDI documentation -- for -- Apache License 2 & Jakarta Eclipse Foundation
 
 == Generating the documentation
 
+* TODO:
 Just enter `mvn` at the command line.
 Maven will generate final doc in HTML and PDF in `target` directory with the default license (ASL2).
 

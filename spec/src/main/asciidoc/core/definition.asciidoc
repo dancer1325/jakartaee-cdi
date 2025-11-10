@@ -12,7 +12,8 @@ SPDX-License-Identifier: Apache-2.0
 == Concepts
 
 * bean
-    ** == source of contextual objects / define application state and/or logic
+    ** == 💡source of contextual objects / define application state and/or logic💡
+        *** contextual objects == object / EXIST | context / managed -- by -- CDI
     ** may bear
         *** metadata / define its lifecycle
         *** interactions -- with -- other beans

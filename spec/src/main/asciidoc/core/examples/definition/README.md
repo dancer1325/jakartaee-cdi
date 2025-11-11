@@ -14,5 +14,8 @@
 * see commentaries `// contextual instances of the bean`
 ## container creates + destroys + associates them -- with -- appropiate context
 * [ContainerDemo](cdi-contextual-objects/src/main/java/com/example/cdi/ContainerDemo.java)
+## uses
+### inject other objects (EVEN OTHER bean instances) / executed | SAME context
+* [InjectionDemo](cdi-contextual-objects/src/main/java/com/example/cdi/InjectionDemo.java)
 
 

@@ -36,7 +36,7 @@ SPDX-License-Identifier: Apache-2.0
         *** destroys these instances
         *** associates these instances -- with the -- appropriate context
     ** uses
-        *** inject | other objects (EVEN OTHER bean instances) / executed | SAME context
+        *** inject other objects (EVEN OTHER bean instances) / executed | SAME context
 
 
 Furthermore, a bean may be an alternative or a reserve.

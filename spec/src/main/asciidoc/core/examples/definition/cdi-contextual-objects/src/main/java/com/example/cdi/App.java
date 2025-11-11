@@ -34,6 +34,11 @@ public class App
             ContainerDemo demo = container.select(ContainerDemo.class).get();
             demo.showContainerActions();
 
+            // 5. InjectionDemo - show contextual instances injecting other objects
+            System.out.println( "5. Contextual Instance Injections" );
+            InjectionDemo injectionDemo = container.select(InjectionDemo.class).get();
+            injectionDemo.showInjections();
+
         } finally {
             // Close container
             weld.shutdown();

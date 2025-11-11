@@ -45,6 +45,13 @@ public class App
             interceptedBean.businessMethod();
             interceptedBean.processData("test data");
 
+            // 7. ReuseInterceptorBean - show reusing existing interceptors
+            System.out.println( "7. Bean Developer Reuses Existing Interceptors" );
+            ReuseInterceptorBean reuseBean = container.select(ReuseInterceptorBean.class).get();
+            reuseBean.methodWithLogging();
+            reuseBean.methodWithMonitoring();
+            reuseBean.methodWithBothInterceptors();
+
         } finally {
             // Close container
             weld.shutdown();

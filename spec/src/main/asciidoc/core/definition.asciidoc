@@ -48,12 +48,12 @@ SPDX-License-Identifier: Apache-2.0
     ** provides
         *** the bean <<implementation>> -- by -- writing business logic | Java code
     ** may
-        *** create interceptors OR
-        *** reuse existing interceptors
-
-In {cdi_full} environment, the bean developer may also create decorators or reuse existing decorators.
-The bean types and qualifiers of a bean determine which decorators will be applied at runtime.
-Decorators are defined in <<decorators>>.
+        *** about interceptors
+            **** create interceptors OR
+            **** reuse existing interceptors
+        *** | {cdi_full} environment, about <<decorators>>
+            **** create decorators
+            **** reuse existing decorators
 
 [[capabilities]]
 

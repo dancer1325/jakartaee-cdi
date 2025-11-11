@@ -27,5 +27,7 @@
   * [InterceptedBean](cdi-contextual-objects/src/main/java/com/example/cdi/InterceptedBean.java) + 
   * [beans.xml](cdi-contextual-objects/src/main/resources/META-INF/beans.xml)'s `<interceptors>`
 ### reuse existing interceptors
-* TODO:
+* [ReuseInterceptorBean](cdi-contextual-objects/src/main/java/com/example/cdi/ReuseInterceptorBean.java)
+
+
 

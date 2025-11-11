@@ -18,4 +18,14 @@
 ### inject other objects (EVEN OTHER bean instances) / executed | SAME context
 * [InjectionDemo](cdi-contextual-objects/src/main/java/com/example/cdi/InjectionDemo.java)
 
+# bean developer
+## may
+### create interceptors
+* see 
+  * [Logged](cdi-contextual-objects/src/main/java/com/example/cdi/Logged.java) + 
+  * [LoggingInterceptor](cdi-contextual-objects/src/main/java/com/example/cdi/LoggingInterceptor.java) + 
+  * [InterceptedBean](cdi-contextual-objects/src/main/java/com/example/cdi/InterceptedBean.java) + 
+  * [beans.xml](cdi-contextual-objects/src/main/resources/META-INF/beans.xml)'s `<interceptors>`
+### reuse existing interceptors
+* TODO:
 

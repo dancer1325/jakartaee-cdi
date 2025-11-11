@@ -11,8 +11,15 @@ SPDX-License-Identifier: Apache-2.0
 
 == Interceptor bindings
 
-Managed beans support interception.
-_Interceptors_ are used to separate cross-cutting concerns from business logic.
+* Interceptors
+    ** are defined -- by -- https://jakarta.ee/specifications/interceptors/[Jakarta EE interceptors specification]
+    ** supported by
+        *** Managed beans
+
+* _Interceptors_
+    ** uses
+        *** separate cross-cutting concerns -- from -- business logic
+
 The Jakarta Interceptors specification defines the basic programming model and semantics, and how to associate interceptors with target classes.
 This specification defines an extent to which {cdi_lite} supports Jakarta Interceptors specification, including extending it with non-binding annotation values in interceptor resolution.
 

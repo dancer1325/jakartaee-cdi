@@ -39,6 +39,12 @@ public class App
             InjectionDemo injectionDemo = container.select(InjectionDemo.class).get();
             injectionDemo.showInjections();
 
+            // 6. InterceptedBean - show bean developer created interceptors
+            System.out.println( "6. Bean Developer Created Interceptors" );
+            InterceptedBean interceptedBean = container.select(InterceptedBean.class).get();
+            interceptedBean.businessMethod();
+            interceptedBean.processData("test data");
+
         } finally {
             // Close container
             weld.shutdown();

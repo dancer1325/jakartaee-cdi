@@ -25,6 +25,12 @@ SPDX-License-Identifier: Apache-2.0
             **** OPTIONAL
         *** set of interceptor bindings
         *** bean implementation
+    ** types
+        *** <<alternatives,alternative>>
+        *** <<reserves,reserve>>
+    ** 's instances are injected | somewhere -- based on, see <<injection_and_resolution>>, --
+        *** bean types
+        *** bean qualifiers
 
 * _contextual instances of the bean_
     ** == PREVIOUS contextual objects
@@ -38,19 +44,12 @@ SPDX-License-Identifier: Apache-2.0
     ** uses
         *** inject other objects (EVEN OTHER bean instances) / executed | SAME context
 
-
-Furthermore, a bean may be an alternative or a reserve.
-
-A bean developer provides the bean implementation by writing business logic in Java code.
-The developer then defines the remaining attributes by explicitly annotating the bean class, or
-by allowing them to be defaulted by the container, as specified in <<implementation>>.
-
-The bean types and qualifiers of a bean determine where its instances will be injected by the container,
-as defined in <<injection_and_resolution>>.
-
-The bean developer may also create interceptors or reuse existing interceptors.
-The interceptor bindings of a bean determine which interceptors will be applied at runtime.
-Interceptors are defined by Jakarta EE interceptors specification, and interceptor bindings are specified in <<interceptors>>.
+* bean developer
+    ** provides
+        *** the bean <<implementation>> -- by -- writing business logic | Java code
+    ** may
+        *** create interceptors OR
+        *** reuse existing interceptors
 
 In {cdi_full} environment, the bean developer may also create decorators or reuse existing decorators.
 The bean types and qualifiers of a bean determine which decorators will be applied at runtime.
@@ -748,7 +747,7 @@ If an interceptor is an alternative, non-portable behavior results.
 
 === Reserves
 
-A _reserve_ is a bean that must be explicitly selected if it should be available for lookup, injection or name resolution.
+* _reserve_ is a bean that must be explicitly selected if it should be available for lookup, injection or name resolution.
 
 During <<typesafe_resolution>>, other, non-reserve beans take precedence over reserves.
 

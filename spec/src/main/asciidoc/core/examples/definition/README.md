@@ -7,6 +7,5 @@
   * [run the app](cdi-contextual-objects/README.md) & check the logs
 ## may bear
 ### metadata / define its lifecycle
-* TODO:
-### interactions -- with -- other beans
-* TODO:
+* [LifecycleBean](cdi-contextual-objects/src/main/java/com/example/cdi/LifecycleBean.java)
+## == MULTIPLE attributes

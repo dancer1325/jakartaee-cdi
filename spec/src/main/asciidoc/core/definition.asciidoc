@@ -16,13 +16,13 @@ SPDX-License-Identifier: Apache-2.0
         *** contextual objects == object / EXIST | context / managed -- by -- CDI
     ** may bear
         *** metadata / define its lifecycle
-        *** interactions -- with -- other beans
+        *** interactions -- , link:events.asciidoc[through events], with -- other beans
     ** == MULTIPLE attributes
         *** (nonempty) set of bean types
         *** (nonempty) set of qualifiers
         *** scope
         *** bean name
-        **** OPTIONAL
+            **** OPTIONAL
         *** set of interceptor bindings
         *** bean implementation
 

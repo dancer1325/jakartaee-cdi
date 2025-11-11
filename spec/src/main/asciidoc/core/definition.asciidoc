@@ -13,7 +13,7 @@ SPDX-License-Identifier: Apache-2.0
 
 * bean
     ** == 💡source of contextual objects / define application state and/or logic💡
-        *** contextual objects == object / EXIST | context / managed -- by -- CDI
+        *** 👀contextual objects == object / EXIST | context / managed -- by -- CDI👀
     ** may bear
         *** metadata / define its lifecycle
         *** interactions -- , link:events.asciidoc[through events], with -- other beans
@@ -28,6 +28,9 @@ SPDX-License-Identifier: Apache-2.0
 
 * _contextual instances of the bean_
     ** == PREVIOUS contextual objects
+        *** ways
+            **** `@Inject`
+            **** `.get()`
     ** container
         *** creates these instances
         *** destroys these instances
@@ -39,9 +42,11 @@ SPDX-License-Identifier: Apache-2.0
 Furthermore, a bean may be an alternative or a reserve.
 
 A bean developer provides the bean implementation by writing business logic in Java code.
-The developer then defines the remaining attributes by explicitly annotating the bean class, or by allowing them to be defaulted by the container, as specified in <<implementation>>.
+The developer then defines the remaining attributes by explicitly annotating the bean class, or
+by allowing them to be defaulted by the container, as specified in <<implementation>>.
 
-The bean types and qualifiers of a bean determine where its instances will be injected by the container, as defined in <<injection_and_resolution>>.
+The bean types and qualifiers of a bean determine where its instances will be injected by the container,
+as defined in <<injection_and_resolution>>.
 
 The bean developer may also create interceptors or reuse existing interceptors.
 The interceptor bindings of a bean determine which interceptors will be applied at runtime.
@@ -99,7 +104,8 @@ The bean types of a bean are used by the rules of typesafe resolution defined in
 
 Almost any Java type may be a bean type of a bean:
 
-* A bean type may be an interface, a concrete class or an abstract class, may be declared sealed or non-sealed or final, and may have final methods.
+* A bean type may be an interface, a concrete class or an abstract class, may be declared sealed or non-sealed or final,
+and may have final methods.
 * A bean type may be a parameterized type with actual type parameters and type variables.
 * A bean type may be an array type.
 Two array types are considered identical only if the element type is identical.
@@ -113,7 +119,8 @@ However, some Java types are not legal bean types :
 * A parameterized type that contains a wildcard type parameter is not a legal bean type.
 * An array type whose component type is not a legal bean type.
 
-Note that certain additional restrictions are specified in <<unproxyable>> for beans with a normal scope, as defined in <<normal_scope>>.
+Note that certain additional restrictions are specified in <<unproxyable>> for beans with a normal scope,
+as defined in <<normal_scope>>.
 
 [[restricting_bean_types]]
 
@@ -131,11 +138,14 @@ public class BookShop
 }
 ----
 
-When a `@Typed` annotation is explicitly specified, only the types whose classes are explicitly listed using the `value` member, together with `java.lang.Object`, are bean types of the bean.
+When a `@Typed` annotation is explicitly specified, only the types whose classes are explicitly listed
+using the `value` member, together with `java.lang.Object`, are bean types of the bean.
 
 In the example, the bean has a two bean types: `Shop<Book>` and `Object`.
 
-If a bean class or producer method or field specifies a `@Typed` annotation, and the `value` member specifies a class which does not correspond to a type in the unrestricted set of bean types of a bean, the container automatically detects the problem and treats it as a definition error.
+If a bean class or producer method or field specifies a `@Typed` annotation, and the `value` member specifies a class
+which does not correspond to a type in the unrestricted set of bean types of a bean,
+the container automatically detects the problem and treats it as a definition error.
 
 [[typecasting_between_bean_types]]
 

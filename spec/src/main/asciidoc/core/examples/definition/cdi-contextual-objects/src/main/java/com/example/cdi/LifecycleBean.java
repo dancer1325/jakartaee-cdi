@@ -10,7 +10,8 @@ import java.util.Set;
 
 @ApplicationScoped
 public class LifecycleBean {
-    
+
+    // inject contextual instance of BeanManager
     @Inject
     BeanManager beanManager;
     

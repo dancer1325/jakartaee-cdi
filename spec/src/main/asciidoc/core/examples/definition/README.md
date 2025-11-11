@@ -1,6 +1,5 @@
-
 # bean
-## ==source of contextual objects / define application state and/or logic
+## == source of contextual objects / define application state and/or logic
 * [UserService](cdi-contextual-objects/src/main/java/com/example/cdi/UserService.java)
 ### == object / EXIST | context / managed -- by -- CDI
 * [ContextChecker](cdi-contextual-objects/src/main/java/com/example/cdi/ContextChecker.java)
@@ -9,3 +8,11 @@
 ### metadata / define its lifecycle
 * [LifecycleBean](cdi-contextual-objects/src/main/java/com/example/cdi/LifecycleBean.java)
 ## == MULTIPLE attributes
+* [AttributeInspector](cdi-contextual-objects/src/main/java/com/example/cdi/AttributeInspector.java) & [MultiAttributeBean](cdi-contextual-objects/src/main/java/com/example/cdi/MultiAttributeBean.java)
+
+# contextual instances of the bean
+* see commentaries `// contextual instances of the bean`
+## container creates + destroys + associates them -- with -- appropiate context
+* [ContainerDemo](cdi-contextual-objects/src/main/java/com/example/cdi/ContainerDemo.java)
+
+

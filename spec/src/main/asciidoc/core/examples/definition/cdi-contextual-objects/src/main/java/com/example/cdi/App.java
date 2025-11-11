@@ -16,18 +16,23 @@ public class App
             // 1. ContextChecker
             // Get the bean and run verifications
             System.out.println( "1. ContextChecker" );
-            ContextChecker checker = container.select(ContextChecker.class).get();
+            ContextChecker checker = container.select(ContextChecker.class).get();              // contextual instances of the bean
             checker.checkAll();
 
             // 2. LifecycleBean - see metadata during lifecycle
             System.out.println( "2. LifecycleBean with metadata inspection" );
-            LifecycleBean lifecycleBean = container.select(LifecycleBean.class).get();
+            LifecycleBean lifecycleBean = container.select(LifecycleBean.class).get();          // contextual instances of the bean
             lifecycleBean.doWork();
 
             // 3. AttributeInspector - show all bean attributes
             System.out.println( "3. Bean Multiple Attributes" );
-            AttributeInspector inspector = container.select(AttributeInspector.class).get();
+            AttributeInspector inspector = container.select(AttributeInspector.class).get();    // contextual instances of the bean
             inspector.showAllAttributes(MultiAttributeBean.class);
+
+            // 4. ContainerDemo - show container actions
+            System.out.println( "4. Container Actions" );
+            ContainerDemo demo = container.select(ContainerDemo.class).get();
+            demo.showContainerActions();
 
         } finally {
             // Close container

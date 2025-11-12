@@ -11,9 +11,15 @@ SPDX-License-Identifier: Apache-2.0
 
 == Structure
 
-The Core CDI specification has two subparts:
-
-* {cdi_lite} specification which contains a subset of CDI features and which can be implemented in more restricted environments; this is part of the Jakarta EE Core Profile;
-* {cdi_full} specification that builds on top of Lite and adds all advanced CDI features; this is the classic CDI platform that is part of the Jakarta EE Web Profile and Jakarta EE Platform.
+* subparts
+    ** {cdi_lite} specification
+        *** == CDI's subset features
+            **** uses
+                ***** can be implemented | MORE restricted environments
+        *** == part of the https://jakarta.ee/specifications/coreprofile/[Jakarta EE Core Profile]
+    ** {cdi_full} specification
+        *** == CDI Lite + advanced CDI features
+        *** == classic CDI platform
+        *** == part of the https://jakarta.ee/specifications/webprofile/[Jakarta EE Web Profile] & https://jakarta.ee/specifications/platform/[Jakarta EE Platform]
 
 :numbered:
